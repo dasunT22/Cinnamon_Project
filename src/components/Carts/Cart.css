@@ -1,0 +1,15 @@
+.cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.2s;
+}
+.cart-btn:hover {
+  background: #f3e5d8;
+  border-radius: 50%;
+}

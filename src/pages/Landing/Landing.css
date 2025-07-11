@@ -1,0 +1,35 @@
+Landing.css
+
+
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+
+.landing-container > * {
+  margin-bottom: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.landing-container > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .landing-container {
+    padding: 0 8px;
+  }
+  .landing-container > * {
+    /* margin-bottom: 32px; */
+  }
+}

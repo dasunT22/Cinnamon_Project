@@ -1,0 +1,103 @@
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('../../../public/images/home_new.png') center center/cover no-repeat;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.47);
+  z-index: 1;
+}
+
+
+.hero-content {
+  min-height: 800px;
+  max-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 4.2rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.shop-btn, .tour-btn {
+  font-size: 1.18rem;
+  font-weight: 700;
+  padding: 1.1rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.shop-btn {
+  background: rgba(217, 217, 217, 0.42);
+  color: #fff;
+  margin-right: 0.5rem;
+  font-weight: 700;
+  font-size: 1.18rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.shop-btn .arrow {
+  font-size: 1.3em;
+  margin-left: 0.7em;
+}
+.shop-btn:hover {
+  background: #b97a56;
+}
+.tour-btn {
+  background: rgba(83, 47, 29, 0.82);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.18rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.tour-btn:hover {
+  background: #b97a56;
+}
