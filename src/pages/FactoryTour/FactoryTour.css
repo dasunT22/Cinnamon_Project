@@ -8,10 +8,10 @@
    position: relative;
   top: 0;
   left: 0;
-  width: 92vw;
+  width: 94vw;
   /* height: 100vh; */
   height: auto;
-  min-height: 87vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;

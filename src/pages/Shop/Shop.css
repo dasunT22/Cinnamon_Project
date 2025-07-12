@@ -1,9 +1,8 @@
 .shop-container {
-  width: 1500px;
-  /* max-width: 1400px;
-  min-width: 1400px; */
-  margin: 0 auto;
-  padding: 2rem 1.5rem 3rem 1.5rem;
+  width: 99vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 8px 24px 15px 24px;
   background: #fff;
   box-sizing: border-box;
 }

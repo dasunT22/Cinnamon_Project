@@ -10,7 +10,7 @@ const Footer = () => (
         <div>+94 772622196</div>
       </div>
       <div className="footer-links">
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/shop">Shop</a>
         <a href="/aboutUs">About Us</a>
         <a href="/factoryTour">Factory Tour</a>

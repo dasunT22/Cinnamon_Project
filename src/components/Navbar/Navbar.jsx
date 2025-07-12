@@ -17,7 +17,7 @@ const Navbar = () => (
       </button>
     </div> */}
     <nav className="nav-links">
-      <a href="/home">Home</a>
+      <a href="/">Home</a>
       <a href="/shop">Shop</a>
       <a href="/aboutUs">About Us</a>
       <a href="/factoryTour">Factory Tours</a>

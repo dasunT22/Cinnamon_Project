@@ -36,9 +36,10 @@
 }
 
 .contactus-container {
-  max-width: 1440px;
-  margin: 0px auto;
-  padding: 0 24px 32px 24px;
+  width: 95.8vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 24px 28px 24px;
   background: #fff;
   border-radius: 0;
   box-shadow: none;

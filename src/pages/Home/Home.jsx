@@ -30,8 +30,8 @@ const Home = () => {
           </div>
         </div>
       </main>
-      {/* <div className="hero-bg" /> */}
-      <div style={{ marginTop: -10, marginBottom: 0, zIndex: 1, position: "relative" }}>
+      <div className="hero-bg" />
+      {/* <div style={{ marginTop: -10, marginBottom: 0, zIndex: 1, position: "relative" }}>
         <Shop />
       </div>
       <div className="hero-bg" />
@@ -41,12 +41,22 @@ const Home = () => {
         <div className="hero-bg" />
         <div style={{ marginTop: 48, marginBottom: 0, zIndex: 1, position: "relative" }}>
         <FactoryTour />
+      </div> */}
+      <div>
+        <Shop />
+      </div>
+      <div>
+        <AboutUs />
+      </div>
+      <div>
+        <FactoryTour />
       </div>
       <div>
         <ContactUs />
       </div>
+      <div>
       <Footer />
-      
+      </div>
     </>
   );
 };
