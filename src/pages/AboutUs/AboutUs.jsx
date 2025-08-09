@@ -14,10 +14,10 @@ const certificateImages = [
 ];
 
 const AboutUs = () => (
-    <>
+  <>
     <Navbar />
-  <div className="aboutus-container">
-    <div className="shop-header">
+    <div className="aboutus-container">
+      <div className="shop-header">
       <div>
         <h2>About Us</h2>
         <span className="aboutus-sub">Pure. Authentic. Sri Lankan.</span>

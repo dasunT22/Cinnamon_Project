@@ -1,8 +1,6 @@
-
 import { useState } from "react";
 import Cart from "../../components/Carts/Cart";
-import Navbar from "../../components/Navbar/Navbar";
-import "./Shop.css";
+import "./ShopSection.css";
 
 const products = [
   {
@@ -67,7 +65,8 @@ const products = [
   }
 ];
 
-const Shop = () => {
+// Component for embedding in Home page (without navbar)
+const ShopSection = () => {
   const [search, setSearch] = useState("");
 
   const filteredProducts = products.filter(product =>
@@ -75,15 +74,13 @@ const Shop = () => {
   );
 
   return (
-    <>
-      <Navbar />
-      <div className="shop-container">
-        <div className="shop-header">
-          <div>
-            <h2>Our Products</h2>
-            <span className="shop-sub">Pure, Authentic Ceylon Cinnamon</span>
-          </div>
-          <div className="shop-search">
+    <div className="shop-container shop-section">
+      <div className="shop-header">
+        <div>
+          <h2>Our Products</h2>
+          <span className="shop-sub">Pure, Authentic Ceylon Cinnamon</span>
+        </div>
+        <div className="shop-search">
           <input
             type="text"
             placeholder="Search ..."
@@ -96,8 +93,8 @@ const Shop = () => {
               <line x1="15.2" y1="15.2" x2="20" y2="20" stroke="#4e2e0e" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </button>
-          </div>
         </div>
+      </div>
       <hr className="shop-divider" />
       <div className="product-grid">
         {filteredProducts.map((product, idx) => (
@@ -113,8 +110,7 @@ const Shop = () => {
         ))}
       </div>
     </div>
-    </>
   );
 };
 
-export default Shop;
+export default ShopSection;

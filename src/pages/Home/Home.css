@@ -1,15 +1,22 @@
 html, body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add proper spacing for the fixed navbar */
+.home-container {
+  padding-top: 90px; /* Space for the fixed navbar */
 }
 
 .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: url('../../../public/images/home_new.png') center center/cover no-repeat;
+  background: url('/images/home_new.png') center center/cover no-repeat;
   box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
 
@@ -19,32 +26,35 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.47);
   z-index: 1;
 }
 
-
 .hero-content {
-  min-height: 800px;
-  max-width: 100vw;
-  width: 100vw;
+  min-height: calc(100vh - 90px); /* Adjust for navbar height */
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 60px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text {
   color: #fff;
   max-width: 600px;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-text h1 {
-  font-size: 400px;
+  font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1.2rem;
   line-height: 1.1;
@@ -105,4 +115,48 @@ html, body {
 }
 .tour-btn:hover {
   background: #b97a56;
+}
+
+/* Content sections styling */
+.content-section {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.content-section:first-of-type {
+  margin-top: -75px; /* Overlap with hero section */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-container {
+    padding-top: 70px;
+  }
+  
+  .hero-content {
+    min-height: calc(100vh - 70px);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .shop-btn, .tour-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

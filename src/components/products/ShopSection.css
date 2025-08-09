@@ -1,15 +1,10 @@
 .shop-container {
-  max-width: 1440px;
+  /* width: 100vw; */
+  max-width: 1510px;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 120px 100px 28px 100px; /* Centered with equal left/right padding */
+  margin: 0;
+  padding: 120px 24px 15px 24px; /* Added top padding for fixed navbar */
   background: #fff;
-  border-radius: 0;
-  box-shadow: none;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   box-sizing: border-box;
 }
 
@@ -136,31 +131,19 @@
 .buy-btn:hover {
   background: #a05e3b;
 }
-@media (max-width: 1440px) {
-  .shop-container {
-    max-width: 100%;
-    padding: 120px 60px 28px 60px;
-  }
-}
-@media (max-width: 1440px) {
-  .shop-container {
-    padding: 120px 40px 28px 40px;
-  }
+@media (max-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 800px) {
-  .shop-container {
-    padding: 120px 30px 28px 30px;
-  }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
   .shop-container {
-    padding: 120px 20px 28px 20px;
+    padding: 1rem 0.2rem;
   }
   .product-grid {
     grid-template-columns: 1fr;

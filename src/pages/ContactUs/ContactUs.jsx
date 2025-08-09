@@ -5,10 +5,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./ContactUs.css";
 
 const ContactUs = () => (
-    <>
+  <>
     <Navbar />
-  <div className="contactus-container">
-    <div className="shop-header">
+    <div className="contactus-container">
+      <div className="shop-header">
       <div>
         <h2>Contact Us</h2>
         <span className="aboutus-sub">Here to Assist You</span>

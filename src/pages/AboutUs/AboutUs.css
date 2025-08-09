@@ -4,10 +4,10 @@
 
 
 .aboutus-container {
-  width: 95.8vw;
+  max-width: 1440px;
   min-height: 100vh;
-  margin: 0;
-  padding: 0 24px 28px 24px;
+  margin: 0 auto;
+  padding: 120px 75px 28px 75px; /* Centered with equal left/right padding */
   background: #fff;
   border-radius: 0;
   box-shadow: none;
@@ -137,4 +137,41 @@
   color: #4e2e0e;
   font-weight: 500;
   margin-top: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .aboutus-container {
+    max-width: 100%;
+    padding: 120px 30px 28px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-container {
+    padding: 120px 20px 28px 20px;
+  }
+  
+  .aboutus-main {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .aboutus-text {
+    font-size: 1rem;
+  }
+  
+  .aboutus-image-box {
+    align-items: center;
+    padding: 12px 0;
+  }
+  
+  .aboutus-image-border {
+    left: 20px;
+  }
+  
+  .aboutus-cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
 }

@@ -1,5 +1,6 @@
 import "./Booking.css"; // Use the same CSS for consistency
 
+
 const bookingData = {
   date: "Wednesday, July 16, 2025",
   time: "9:00 AM",
@@ -9,6 +10,7 @@ const bookingData = {
   email: "dasunathapaththu22@gmail.com",
   phone: "+94782222222",
 };
+
 
 const Confirmation = () => {
   const handleConfirm = () => {
@@ -108,7 +110,7 @@ const Confirmation = () => {
         <button
           className="booking-continue"
           type="button"
-          onClick={handleConfirm}
+          onClick={handleConfirm} 
         >
           Confirm
         </button>
